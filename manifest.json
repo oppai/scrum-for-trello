@@ -1,0 +1,16 @@
+{
+  "name": "Scrum for Trello",
+    "version": "0.0.1",
+    "manifest_version": 4,
+    "description": "スクラム用のTrelloのChrome拡張",
+    "content_scripts": [
+    {
+      "matches": ["https://trello.com/b/*/*"],
+      "js": [
+              "jquery.min.js",
+              "main.js"
+            ],
+      "run_at": "document_end"
+    }
+  ]
+}
